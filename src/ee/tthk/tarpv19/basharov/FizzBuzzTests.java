@@ -2,12 +2,15 @@ package ee.tthk.tarpv19.basharov;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.stream.IntStream;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class FizzBuzzTests {
 
+	FizzBuzz fb;
 	@BeforeEach
 	void setUp() throws Exception {
 	}
@@ -16,11 +19,31 @@ class FizzBuzzTests {
 	void tearDown() throws Exception {
 	}
 
-	/*@Test
+	@Test
 	void shouldReturnOneHundredNumbers() {
 		FizzBuzz fb=new FizzBuzz();
 		assertEquals(100, fb.getNumbers().length);
-	}*/
+	}
+	@Test
+	void shouldReturnNumbers1_100() {
+		int[] expected = IntStream.range(1, 101).toArray();
+		assertEquals(100, fb.getNumbers().length);
+	}
+	
+	@Test
+	void shouldReturnFizzNumbersDivisibleBly3() {
+		String[] actual = fb.getNumbers();
+		for(int i = 0; i < expected1_100.length; i++) {
+			if(Integer.valueOf(expected1_100[i])%5==0) {lajlgijdlirjgölöajfgöl
+				assertEquals("Fizz",actual[i]);
+			}else {
+				assertEquals("expected",actual[i]);
+			}
+			
+		}
+		int[] expected = IntStream.range(1, 101).toArray();
+		assertEquals(100, fb.getNumbers().length);
+	}
 	
 	@Test
 	public void check_0is0() {
