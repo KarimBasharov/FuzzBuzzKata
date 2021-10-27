@@ -30,7 +30,7 @@ class IpValidatorTests {
 	void ShouldReturnFourNumbersGivenStringWithThreeDots() {
 		IpValidator validator = new IpValidator();
 		int[] expected = {1,2,3,4};
-		assertArrayEquals(expected,validator.getNumbers("1.2.3.1"));
+		assertArrayEquals(expected,validator.getNumbers("1.2.3.4"));
 	}
 
 }
