@@ -57,7 +57,8 @@ class IpValidatorTests {
 	}
 	@Test
 	void ShouldBe_False_GivenIPstartingWith255() {
-		
+		IpValidator validator= new IpValidator();
+		assertTrue(validator.ValidateIpv4Address("255.2.3.4"));
 	}
 	@Test
 	void ShouldBe_False_GivenIPendingWith255() {
