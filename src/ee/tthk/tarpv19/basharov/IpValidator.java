@@ -1,7 +1,6 @@
 package ee.tthk.tarpv19.basharov;
 
 import java.util.Arrays;
-import java.util.function.BooleanSupplier;
 
 public class IpValidator {
 
